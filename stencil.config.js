@@ -1,5 +1,5 @@
 exports.config = {
-  namespace: 'image-gallery',
+  namespace: 'img-gallery',
   outputTargets: [
     {
       type: 'dist'

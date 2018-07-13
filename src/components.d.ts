@@ -30,70 +30,31 @@ declare global {
 declare global {
 
   namespace StencilComponents {
-    interface ImageGalleryImg {
-      'color': string;
-      'comment': string;
-      'link': string;
-      'src': string;
-    }
-  }
-
-  interface HTMLImageGalleryImgElement extends StencilComponents.ImageGalleryImg, HTMLStencilElement {}
-
-  var HTMLImageGalleryImgElement: {
-    prototype: HTMLImageGalleryImgElement;
-    new (): HTMLImageGalleryImgElement;
-  };
-  interface HTMLElementTagNameMap {
-    'image-gallery-img': HTMLImageGalleryImgElement;
-  }
-  interface ElementTagNameMap {
-    'image-gallery-img': HTMLImageGalleryImgElement;
-  }
-  namespace JSX {
-    interface IntrinsicElements {
-      'image-gallery-img': JSXElements.ImageGalleryImgAttributes;
-    }
-  }
-  namespace JSXElements {
-    export interface ImageGalleryImgAttributes extends HTMLAttributes {
-      'color'?: string;
-      'comment'?: string;
-      'link'?: string;
-      'src'?: string;
-    }
-  }
-}
-
-
-declare global {
-
-  namespace StencilComponents {
-    interface ImageGallery {
+    interface ImgGallery {
       'color': string;
       'src': Array<any>;
     }
   }
 
-  interface HTMLImageGalleryElement extends StencilComponents.ImageGallery, HTMLStencilElement {}
+  interface HTMLImgGalleryElement extends StencilComponents.ImgGallery, HTMLStencilElement {}
 
-  var HTMLImageGalleryElement: {
-    prototype: HTMLImageGalleryElement;
-    new (): HTMLImageGalleryElement;
+  var HTMLImgGalleryElement: {
+    prototype: HTMLImgGalleryElement;
+    new (): HTMLImgGalleryElement;
   };
   interface HTMLElementTagNameMap {
-    'image-gallery': HTMLImageGalleryElement;
+    'img-gallery': HTMLImgGalleryElement;
   }
   interface ElementTagNameMap {
-    'image-gallery': HTMLImageGalleryElement;
+    'img-gallery': HTMLImgGalleryElement;
   }
   namespace JSX {
     interface IntrinsicElements {
-      'image-gallery': JSXElements.ImageGalleryAttributes;
+      'img-gallery': JSXElements.ImgGalleryAttributes;
     }
   }
   namespace JSXElements {
-    export interface ImageGalleryAttributes extends HTMLAttributes {
+    export interface ImgGalleryAttributes extends HTMLAttributes {
       'color'?: string;
       'src'?: Array<any>;
     }

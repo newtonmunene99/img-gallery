@@ -1,8 +1,8 @@
 {
-  "name": "image-gallery",
+  "name": "img-gallery",
   "version": "0.0.1",
   "description": "Image Gallery Web Component",
-  "homepage": "https://github.com/newtonmunene99/mpesa-api/",
+  "homepage": "https://github.com/newtonmunene99/img-gallery/",
   "module": "dist/esm/index.js",
   "main": "dist/index.js",
   "types": "dist/types/components.d.ts",
@@ -39,10 +39,10 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/newtonmunene99/mpesa-api.git"
+    "url": "git+https://github.com/newtonmunene99/img-gallery.git"
   },
   "bugs": {
-    "url": "https://github.com/newtonmunene99/mpesa-api/issues"
+    "url": "https://github.com/newtonmunene99/img-gallery/issues"
   },
   "jest": {
     "transform": {

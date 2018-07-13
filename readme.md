@@ -11,19 +11,19 @@ This is a web component to help users integrate a masonry style image gallery in
 
 ### Script tag
 
-- Put this script tag `<script src='https://unpkg.com/image-gallery@0.0.1/dist/image-gallery.js'></script>` in the head of your index.html
+- Put this script tag `<script src='https://unpkg.com/img-gallery@0.0.1/dist/img-gallery.js'></script>` in the head of your index.html
 - Then you can use the element anywhere in your template, JSX, html etc
 
 ### Node Modules
 
-- Run `npm install image-gallery --save`
-- Put a script tag similar to this `<script src='node_modules/image-gallery/dist/image-gallery.js'></script>` in the head of your index.html
+- Run `npm install img-gallery --save`
+- Put a script tag similar to this `<script src='node_modules/img-gallery/dist/img-gallery.js'></script>` in the head of your index.html
 - Then you can use the element anywhere in your template, JSX, html etc
 
 ### In a stencil-starter app
 
-- Run `npm install image-gallery --save`
-- Add an import to the npm packages `import image-gallery;`
+- Run `npm install img-gallery --save`
+- Add an import to the npm packages `import img-gallery;`
 - Then you can use the element anywhere in your template, JSX, html etc
 
 #### Usage Example
@@ -35,13 +35,14 @@ This is a web component to help users integrate a masonry style image gallery in
 - It is important that the images are direct children. Do not place them in a container such as a `div` or `section` etc.
 
 ```html
-<image-gallery>
+<img-gallery>
     <img src="example1.jpg">
     <img src="example2.jpg">
     <img src="example3.jpg">
     <img src="example4.jpg">
     <img src="example5.jpg">
-</image-gallery>
+</img-gallery>
+&lt;  &gt;
 ```
 
 2.  Feed an array of image source urls to the src property
@@ -57,7 +58,7 @@ URLArray: Array<string> = ['example1.jpg','example2.jpg','example2.jpg','example
 Then In your html file.
 
 ```html
-<image-gallery src={URLArray}></image-gallery>
+<img-gallery src={URLArray}></img-gallery>
 ```
 
 Or In your tsx file
@@ -68,7 +69,7 @@ URLArray: Array<string> = ['example1.jpg','example2.jpg','example2.jpg','example
 render() {
     return(
         <div>
-            <image-gallery src={this.URLArray}></image-gallery>
+            <img-gallery src={this.URLArray}></img-gallery>
         </div>
     )
 };
@@ -84,15 +85,15 @@ Image Gallery Component only takes two optional properties.
 - This is the background color of the Gallery. If not supplied the Gallery will inherit the background color of the page,div or section that it is placed in. It can either be a valid css color name or a valid css hex color code.
 
 ```html
-<image-gallery color="black">
+<img-gallery color="black">
     ...
-</image-gallery>
+</img-gallery>
 
 <!-- or -->
 
-<image-gallery color="#000">
+<img-gallery color="#000">
     ...
-</image-gallery>
+</img-gallery>
 ```
 
 #### Extras

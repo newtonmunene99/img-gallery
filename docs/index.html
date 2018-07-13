@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Image Gallery Component</title>
-    <script src="../dist/image-gallery.js"></script>
+    <script src="../dist/img-gallery.js"></script>
     <link rel="shortcut icon" href="../docs/assets/images/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
@@ -20,14 +20,14 @@
         </ul>
     </nav>
     <header>
-        <span class="tagline">SIMPLE, CUSTOMIZABLE, FREE, OPEN SOURCE</span>
+        <span class="tagline">&lt;img-gallery/&gt;</span>
 
         <p>Our Image Gallery Component is a simple gallery with a masonry style grid(e.g Pinterest Grid Style). It is designed
             to lessen the time you spend on css just to get a good looking gallery. It is fully responsive. Get a feel of
             it below. Click on an image to enter View Mode.</p>
 
 
-        <image-gallery>
+        <img-gallery>
             <img src="./assets/images/1.jpg" alt="">
             <img src="./assets/images/2.jpg" alt="">
             <img src="./assets/images/3.jpg" alt="">
@@ -39,7 +39,7 @@
             <img src="./assets/images/9.jpg" alt="">
             <img src="./assets/images/10.jpg" alt="">
             <img src="./assets/images/11.jpg" alt="">
-        </image-gallery>
+        </img-gallery>
     </header>
     <main>
         <h3>Using this component</h3>
@@ -48,7 +48,8 @@
         <ul>
             <li>
                 <p>Place this script tag,
-                    <span class="highlight">sldkd</span> ,in the head of your index.html</p>
+                    <span class="highlight">&lt;script src='https://unpkg.com/img-gallery@0.0.1/dist/img-gallery.js'&gt;&lt;/script&gt;</span> ,in
+                    the head of your index.html</p>
             </li>
             <li>
                 <p>Then you can use it anywhere as any other normal html element. See usage example section below.</p>
@@ -60,15 +61,16 @@
         <ul>
             <li>
                 <p>Run
-                    <span class="highlight">npm install image-gallery --save</span> in your terminal.</p>
+                    <span class="highlight">npm install img-gallery --save</span> in your terminal.</p>
             </li>
             <li>
                 <p>Place a script tag similar to this,
-                    <span class="highlight">sldkd</span> ,in the head of your index.html</p>
+                    <span class="highlight">&lt;script src='node_modules/img-gallery/dist/img-gallery.js'&gt;&lt;/script&gt;</span> ,in the head
+                    of your index.html</p>
             </li>
             <li>
                 <p>Alternatively, for stencil,react etc add this import,
-                    <span class="highlight">import image-gallery</span>
+                    <span class="highlight">import img-gallery</span>
                 </p>
             </li>
             <li>
@@ -83,12 +85,210 @@
             <li>
                 <p>Place your images as direct children of the component. It is important that the images are direct children.
                     Do not place them in a container such as a div or section etc.</p>
-                <p>write code example</p>
+                <div id="highlighterMainDiv" class="syntaxhighlighter nogutter html">
+                    <table border="0" cellpadding="0" cellspacing="0">
+                        <tbody>
+                            <tr>
+                                <td>&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td id="codeContainer_228590" class="code">
+                                    <div id="container_228590" class="container">
+                                        <div class="line number1 index0 alt2">
+                                            <code class="html plain">&lt;</code>
+                                            <code class="html keyword">img-gallery</code>
+                                            <code class="html plain">&gt;</code>
+                                        </div>
+                                        <div class="line number2 index1 alt1">
+                                            <code class="html spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code>
+                                            <code class="html plain">&lt;</code>
+                                            <code class="html keyword">img</code>
+                                            <code class="html color1">src</code>
+                                            <code class="html plain">=</code>
+                                            <code class="html string">"example1.jpg"</code>
+                                            <code class="html plain">&gt;</code>
+                                        </div>
+                                        <div class="line number3 index2 alt2">
+                                            <code class="html spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code>
+                                            <code class="html plain">&lt;</code>
+                                            <code class="html keyword">img</code>
+                                            <code class="html color1">src</code>
+                                            <code class="html plain">=</code>
+                                            <code class="html string">"example2.jpg"</code>
+                                            <code class="html plain">&gt;</code>
+                                        </div>
+                                        <div class="line number4 index3 alt1">
+                                            <code class="html spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code>
+                                            <code class="html plain">&lt;</code>
+                                            <code class="html keyword">img</code>
+                                            <code class="html color1">src</code>
+                                            <code class="html plain">=</code>
+                                            <code class="html string">"example3.jpg"</code>
+                                            <code class="html plain">&gt;</code>
+                                        </div>
+                                        <div class="line number5 index4 alt2">
+                                            <code class="html spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code>
+                                            <code class="html plain">&lt;</code>
+                                            <code class="html keyword">img</code>
+                                            <code class="html color1">src</code>
+                                            <code class="html plain">=</code>
+                                            <code class="html string">"example4.jpg"</code>
+                                            <code class="html plain">&gt;</code>
+                                        </div>
+                                        <div class="line number6 index5 alt1">
+                                            <code class="html spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code>
+                                            <code class="html plain">&lt;</code>
+                                            <code class="html keyword">img</code>
+                                            <code class="html color1">src</code>
+                                            <code class="html plain">=</code>
+                                            <code class="html string">"example5.jpg"</code>
+                                            <code class="html plain">&gt;</code>
+                                        </div>
+                                        <div class="line number7 index6 alt2">
+                                            <code class="html plain">&lt;/</code>
+                                            <code class="html keyword">img-gallery</code>
+                                            <code class="html plain">&gt;</code>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td>&nbsp;</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
             </li>
             <li>
                 <p>Feed an array of image source urls to the src property. Please note that this is for use within frameworks
                     such as Angular, Ionic Framework, Stencil, React etc.</p>
-                <p>Write code example</p>
+                <p>In your .ts file</p>
+                <div id="highlighterMainDiv" class="syntaxhighlighter nogutter jscript">
+                    <table border="0" cellpadding="0" cellspacing="0">
+                        <tbody>
+                            <tr>
+                                <td>&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td id="codeContainer_309577" class="code">
+                                    <div id="container_309577" class="container">
+                                        <div class="line number1 index0 alt2">
+                                            <code class="jscript plain">URLArray: Array&lt;string&gt; = [</code>
+                                            <code class="jscript string">'example1.jpg'</code>
+                                            <code class="jscript plain">,</code>
+                                            <code class="jscript string">'example2.jpg'</code>
+                                            <code class="jscript plain">,</code>
+                                            <code class="jscript string">'example2.jpg'</code>
+                                            <code class="jscript plain">,</code>
+                                            <code class="jscript string">'example2.jpg'</code>
+                                            <code class="jscript plain">];</code>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td>&nbsp;</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <p>In your .html file</p>
+                <div id="highlighterMainDiv" class="syntaxhighlighter nogutter xml">
+                    <table border="0" cellpadding="0" cellspacing="0">
+                        <tbody>
+                            <tr>
+                                <td>&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td id="codeContainer_952527" class="code">
+                                    <div id="container_952527" class="container">
+                                        <div class="line number1 index0 alt2">
+                                            <code class="xml plain">&lt;</code>
+                                            <code class="xml keyword">img-gallery</code>
+                                            <code class="xml plain">src={URLArray}&gt;&lt;/</code>
+                                            <code class="xml keyword">img-gallery</code>
+                                            <code class="xml plain">&gt;</code>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td>&nbsp;</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <p>Or in your tsx file</p>
+                <div id="highlighterMainDiv" class="syntaxhighlighter nogutter xml">
+                    <table border="0" cellpadding="0" cellspacing="0">
+                        <tbody>
+                            <tr>
+                                <td>&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td id="codeContainer_304825" class="code">
+                                    <div id="container_304825" class="container">
+                                        <div class="line number1 index0 alt2">
+                                            <code class="xml plain">URLArray: Array&lt;</code>
+                                            <code class="xml keyword">string</code>
+                                            <code class="xml plain">&gt; = ['example1.jpg','example2.jpg','example2.jpg','example2.jpg'];</code>
+                                        </div>
+                                        <div class="line number2 index1 alt1">&nbsp;</div>
+                                        <div class="line number3 index2 alt2">
+                                            <code class="xml plain">render() {</code>
+                                        </div>
+                                        <div class="line number4 index3 alt1">
+                                            <code class="xml spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code>
+                                            <code class="xml plain">return(</code>
+                                        </div>
+                                        <div class="line number5 index4 alt2">
+                                            <code class="xml spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code>
+                                            <code class="xml plain">&lt;</code>
+                                            <code class="xml keyword">div</code>
+                                            <code class="xml plain">&gt;</code>
+                                        </div>
+                                        <div class="line number6 index5 alt1">
+                                            <code class="xml spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code>
+                                            <code class="xml plain">&lt;</code>
+                                            <code class="xml keyword">img-gallery</code>
+                                            <code class="xml plain">src={this.URLArray}&gt;&lt;/</code>
+                                            <code class="xml keyword">img-gallery</code>
+                                            <code class="xml plain">&gt;</code>
+                                        </div>
+                                        <div class="line number7 index6 alt2">
+                                            <code class="xml spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code>
+                                            <code class="xml plain">&lt;/</code>
+                                            <code class="xml keyword">div</code>
+                                            <code class="xml plain">&gt;</code>
+                                        </div>
+                                        <div class="line number8 index7 alt1">
+                                            <code class="xml spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code>
+                                            <code class="xml plain">)</code>
+                                        </div>
+                                        <div class="line number9 index8 alt2">
+                                            <code class="xml plain">};</code>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td>&nbsp;</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
             </li>
         </ol>
         <hr>
@@ -107,7 +307,66 @@
                 <p>This is the background color of the Gallery. If not supplied the Gallery will inherit the background color
                     of the page,div or section that it is placed in. It can either be a valid css color name or a valid css
                     hex color code.</p>
-                <p>Write some code</p>
+                <div id="highlighterMainDiv" class="syntaxhighlighter nogutter html">
+                    <table border="0" cellpadding="0" cellspacing="0">
+                        <tbody>
+                            <tr>
+                                <td>&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td id="codeContainer_796542" class="code">
+                                    <div id="container_796542" class="container">
+                                        <div class="line number1 index0 alt2">
+                                            <code class="html plain">&lt;</code>
+                                            <code class="html keyword">img-gallery</code>
+                                            <code class="html color1">color</code>
+                                            <code class="html plain">=</code>
+                                            <code class="html string">"black"</code>
+                                            <code class="html plain">&gt;</code>
+                                        </div>
+                                        <div class="line number2 index1 alt1">
+                                            <code class="html spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code>
+                                            <code class="html plain">...</code>
+                                        </div>
+                                        <div class="line number3 index2 alt2">
+                                            <code class="html plain">&lt;/</code>
+                                            <code class="html keyword">img-gallery</code>
+                                            <code class="html plain">&gt;</code>
+                                        </div>
+                                        <div class="line number4 index3 alt1">&nbsp;</div>
+                                        <div class="line number5 index4 alt2">
+                                            <code class="html comments">&lt;!-- or --&gt;</code>
+                                        </div>
+                                        <div class="line number6 index5 alt1">&nbsp;</div>
+                                        <div class="line number7 index6 alt2">
+                                            <code class="html plain">&lt;</code>
+                                            <code class="html keyword">img-gallery</code>
+                                            <code class="html color1">color</code>
+                                            <code class="html plain">=</code>
+                                            <code class="html string">"#000"</code>
+                                            <code class="html plain">&gt;</code>
+                                        </div>
+                                        <div class="line number8 index7 alt1">
+                                            <code class="html spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code>
+                                            <code class="html plain">...</code>
+                                        </div>
+                                        <div class="line number9 index8 alt2">
+                                            <code class="html plain">&lt;/</code>
+                                            <code class="html keyword">img-gallery</code>
+                                            <code class="html plain">&gt;</code>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td>&nbsp;</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
             </li>
         </ol>
         <hr>

@@ -1,11 +1,11 @@
 import { Component, Prop, State } from '@stencil/core';
 
 @Component({
-  tag: 'image-gallery',
-  styleUrl: 'image-gallery.css',
+  tag: 'img-gallery',
+  styleUrl: 'img-gallery.css',
   shadow: true
 })
-export class ImageGallery {
+export class ImgGallery {
   @Prop() color: string = 'inherit';
   @Prop() src: Array<any>;
   @State() preview: Boolean;
@@ -58,7 +58,7 @@ export class ImageGallery {
     if (this.src) {
       this.images = this.src;
     } else {
-      let myImageGallery = document.querySelector('image-gallery');
+      let myImageGallery = document.querySelector('img-gallery');
       this.images = [].slice.call(myImageGallery.getElementsByTagName('img'));
     }
   }

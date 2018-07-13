@@ -127,3 +127,10 @@ footer a {
 footer a:hover {
   color: #1bac91;
 }
+
+div#highlighterMainDiv {
+  background-color: black;
+  padding: 0 20px;
+  border-radius: 5px;
+  word-break: break-word;
+}

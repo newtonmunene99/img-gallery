@@ -1,0 +1,47 @@
+{
+  "components": [
+    {
+      "tag": "img-gallery",
+      "dependencies": [],
+      "componentClass": "ImgGallery",
+      "componentPath": "components/img-gallery/img-gallery.js",
+      "styles": {
+        "$": {
+          "stylePaths": [
+            "components/img-gallery/img-gallery.css"
+          ]
+        }
+      },
+      "props": [
+        {
+          "name": "color",
+          "type": "String",
+          "attr": "color"
+        },
+        {
+          "name": "src",
+          "attr": "src"
+        }
+      ],
+      "states": [
+        {
+          "name": "CurrentImageUrl"
+        },
+        {
+          "name": "images"
+        },
+        {
+          "name": "preview"
+        }
+      ],
+      "shadow": true
+    }
+  ],
+  "collections": [],
+  "compiler": {
+    "name": "@stencil/core",
+    "version": "0.9.7",
+    "typescriptVersion": "2.9.1"
+  },
+  "bundles": []
+}

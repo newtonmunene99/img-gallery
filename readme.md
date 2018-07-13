@@ -42,7 +42,6 @@ This is a web component to help users integrate a masonry style image gallery in
     <img src="example4.jpg">
     <img src="example5.jpg">
 </img-gallery>
-&lt;  &gt;
 ```
 
 2.  Feed an array of image source urls to the src property

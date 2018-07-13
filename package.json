@@ -1,7 +1,8 @@
 {
-  "name": "live-help",
+  "name": "image-gallery",
   "version": "0.0.1",
-  "description": "Stencil Component Starter",
+  "description": "Image Gallery Web Component",
+  "homepage": "https://github.com/newtonmunene99/mpesa-api/",
   "module": "dist/esm/index.js",
   "main": "dist/index.js",
   "types": "dist/types/components.d.ts",
@@ -25,16 +26,24 @@
     "@types/jest": "^21.1.1",
     "jest": "^21.2.1"
   },
+  "author": {
+    "name": "Newton Munene",
+    "email": "newtonmunene99@gmail.com"
+  },
+  "license": "MIT",
+  "keywords": [
+    "Web Components",
+    "Image Gallery",
+    "Stencil",
+    "Masonry CSS"
+  ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ionic-team/stencil-component-starter.git"
+    "url": "git+https://github.com/newtonmunene99/mpesa-api.git"
   },
-  "author": "Ionic Team",
-  "license": "MIT",
   "bugs": {
-    "url": "https://github.com/ionic-team/stencil"
+    "url": "https://github.com/newtonmunene99/mpesa-api/issues"
   },
-  "homepage": "https://github.com/ionic-team/stencil",
   "jest": {
     "transform": {
       "^.+\\.(ts|tsx)$": "<rootDir>/node_modules/@stencil/core/testing/jest.preprocessor.js"

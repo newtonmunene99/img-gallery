@@ -16,8 +16,8 @@ export class ImageGallery {
   handleImageOpen(event, index) {
     this.CurrentImageUrl = event.target.src;
     this.preview = true;
-    document.querySelector('body').setAttribute('style', 'overflow: hidden;');
     this.currentIndex = index;
+    document.querySelector('body').setAttribute('style', 'overflow: hidden;');
   }
 
   handlePreviewImage(event, index) {
@@ -29,8 +29,11 @@ export class ImageGallery {
     if (this.currentIndex < this.images.length - 1) {
       this.currentIndex++;
     }
-
-    this.CurrentImageUrl = this.images[this.currentIndex].src;
+    if (this.src) {
+      this.CurrentImageUrl = this.images[this.currentIndex];
+    } else {
+      this.CurrentImageUrl = this.images[this.currentIndex].src;
+    }
   }
 
   previous() {
@@ -38,7 +41,11 @@ export class ImageGallery {
       this.currentIndex--;
     }
 
-    this.CurrentImageUrl = this.images[this.currentIndex].src;
+    if (this.src) {
+      this.CurrentImageUrl = this.images[this.currentIndex];
+    } else {
+      this.CurrentImageUrl = this.images[this.currentIndex].src;
+    }
   }
 
   handleImageClose() {
@@ -48,25 +55,45 @@ export class ImageGallery {
   }
 
   componentWillLoad() {
-    let myImageGallery = document.querySelector('image-gallery');
-    this.images = [].slice.call(myImageGallery.getElementsByTagName('img'));
+    if (this.src) {
+      this.images = this.src;
+    } else {
+      let myImageGallery = document.querySelector('image-gallery');
+      this.images = [].slice.call(myImageGallery.getElementsByTagName('img'));
+    }
   }
 
   render() {
     return [
-      <div
-        id="photos"
-        style={{ 'background-color': this.color, overflow: 'auto' }}
-      >
-        {this.images.map((image, index) => (
-          <img
-            src={image.src}
-            alt="Image"
-            onClick={event => {
-              this.handleImageOpen(event, index);
-            }}
-          />
-        ))}
+      <div>
+        {!this.src && !this.images ? (
+          <div />
+        ) : (
+          <div
+            id="photos"
+            style={{ 'background-color': this.color, overflow: 'auto' }}
+          >
+            {this.src
+              ? this.images.map((image, index) => (
+                  <img
+                    src={image}
+                    alt="Image"
+                    onClick={event => {
+                      this.handleImageOpen(event, index);
+                    }}
+                  />
+                ))
+              : this.images.map((image, index) => (
+                  <img
+                    src={image.src}
+                    alt="Image"
+                    onClick={event => {
+                      this.handleImageOpen(event, index);
+                    }}
+                  />
+                ))}
+          </div>
+        )}
       </div>,
       <div>
         {this.preview ? (
@@ -95,15 +122,25 @@ export class ImageGallery {
               <img src={this.CurrentImageUrl} alt="Image" />
             </div>
             <div class="footer">
-              {this.images.map((image, index) => (
-                <img
-                  src={image.src}
-                  alt="Image"
-                  onClick={event => {
-                    this.handlePreviewImage(event, index);
-                  }}
-                />
-              ))}
+              {this.src
+                ? this.images.map((image, index) => (
+                    <img
+                      src={image}
+                      alt="Image"
+                      onClick={event => {
+                        this.handlePreviewImage(event, index);
+                      }}
+                    />
+                  ))
+                : this.images.map((image, index) => (
+                    <img
+                      src={image.src}
+                      alt="Image"
+                      onClick={event => {
+                        this.handlePreviewImage(event, index);
+                      }}
+                    />
+                  ))}
             </div>
           </div>
         ) : null}

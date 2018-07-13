@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Image Gallery Component</title>
+    <script src="../dist/image-gallery.js"></script>
+    <link rel="shortcut icon" href="../docs/assets/images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li>
+                <a href="">Image Gallery Component</a>
+            </li>
+        </ul>
+    </nav>
+    <header>
+        <span class="tagline">SIMPLE, CUSTOMIZABLE, FREE, OPEN SOURCE</span>
+
+        <p>Our Image Gallery Component is a simple gallery with a masonry style grid(e.g Pinterest Grid Style). It is designed
+            to lessen the time you spend on css just to get a good looking gallery. It is fully responsive. Get a feel of
+            it below. Click on an image to enter View Mode.</p>
+
+
+        <image-gallery>
+            <img src="./assets/images/1.jpg" alt="">
+            <img src="./assets/images/2.jpg" alt="">
+            <img src="./assets/images/3.jpg" alt="">
+            <img src="./assets/images/4.jpg" alt="">
+            <img src="./assets/images/5.jpg" alt="">
+            <img src="./assets/images/6.jpg" alt="">
+            <img src="./assets/images/7.jpg" alt="">
+            <img src="./assets/images/8.jpg" alt="">
+            <img src="./assets/images/9.jpg" alt="">
+            <img src="./assets/images/10.jpg" alt="">
+            <img src="./assets/images/11.jpg" alt="">
+        </image-gallery>
+    </header>
+    <main>
+        <h3>Using this component</h3>
+
+        <h4>Script Tag</h4>
+        <ul>
+            <li>
+                <p>Place this script tag,
+                    <span class="highlight">sldkd</span> ,in the head of your index.html</p>
+            </li>
+            <li>
+                <p>Then you can use it anywhere as any other normal html element. See usage example section below.</p>
+            </li>
+        </ul>
+
+
+        <h4>Node Modules</h4>
+        <ul>
+            <li>
+                <p>Run
+                    <span class="highlight">npm install image-gallery --save</span> in your terminal.</p>
+            </li>
+            <li>
+                <p>Place a script tag similar to this,
+                    <span class="highlight">sldkd</span> ,in the head of your index.html</p>
+            </li>
+            <li>
+                <p>Alternatively, for stencil,react etc add this import,
+                    <span class="highlight">import image-gallery</span>
+                </p>
+            </li>
+            <li>
+                <p>Then you can use it anywhere as any other normal html element. See usage example section below.</p>
+            </li>
+        </ul>
+        <hr>
+        <h3>Usage Example</h3>
+        <b class="warning">Please do not use both methods shown below together. i.e dont combine the two. If combined the component will default
+            to the 2nd method.</b>
+        <ol>
+            <li>
+                <p>Place your images as direct children of the component. It is important that the images are direct children.
+                    Do not place them in a container such as a div or section etc.</p>
+                <p>write code example</p>
+            </li>
+            <li>
+                <p>Feed an array of image source urls to the src property. Please note that this is for use within frameworks
+                    such as Angular, Ionic Framework, Stencil, React etc.</p>
+                <p>Write code example</p>
+            </li>
+        </ol>
+        <hr>
+        <h3>Component Properties</h3>
+        <p>Image Gallery Component only takes two optional properties.</p>
+        <ol>
+            <li>
+                <p>
+                    <span class="highlight">src</span> property discussed above.
+                </p>
+            </li>
+            <li>
+                <p>
+                    <span class="highlight">color</span> property.
+                </p>
+                <p>This is the background color of the Gallery. If not supplied the Gallery will inherit the background color
+                    of the page,div or section that it is placed in. It can either be a valid css color name or a valid css
+                    hex color code.</p>
+                <p>Write some code</p>
+            </li>
+        </ol>
+        <hr>
+    </main>
+    <footer>
+        <b>
+            <i>
+                <a href="http://">~ Newton Munene ~</a>
+            </i>
+        </b>
+        <b>
+            <i>
+                <a href="http://">~ The Mindle Project ~</a>
+            </i>
+        </b>
+    </footer>
+</body>
+
+
+</html>

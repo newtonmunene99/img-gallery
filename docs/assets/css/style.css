@@ -1,0 +1,129 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #222222;
+  color: white;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  border-left: solid 2px #1bac91;
+  padding: 10px;
+  box-shadow: 0px 1px 10px 0px rgb(0, 0, 0, 0.4);
+  border-radius: 5px;
+}
+
+h2 {
+  padding: 30px;
+  border-left: solid 10px #1bac91;
+}
+
+h3 {
+  padding: 20px;
+  border-left: solid 8px #1bac91;
+}
+
+h4 {
+  padding: 10px;
+  border-left: solid 6px #1bac91;
+}
+
+h5 {
+  padding: 5px;
+  border-left: solid 4px #1bac91;
+}
+
+span.highlight {
+  background-color: sandybrown;
+  padding: 2px 5px;
+  border-radius: 2px;
+  color: black;
+  font-family: monospace;
+}
+span.tagline {
+  background-color: grey;
+  padding: 10px;
+  border-left: solid 5px;
+  border-right: solid 5px;
+  border-radius: 5px;
+}
+b.warning {
+  color: #cd5c5c;
+}
+nav {
+  box-shadow: 0px 1px 10px 0px rgb(0, 0, 0, 0.4);
+  height: 64px;
+}
+nav ul {
+  height: 100%;
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  flex-flow: row wrap;
+}
+
+nav ul li {
+  box-shadow: 0px 1px 10px 0px rgb(0, 0, 0, 0.4);
+  background-color: #1bac91;
+  height: 40px;
+  padding: 0 20px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+header {
+  padding: 40px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+}
+
+header p {
+  text-align: center;
+}
+main {
+  padding: 40px;
+  margin: 20px 3%;
+  text-align: left;
+}
+
+footer {
+  display: flex;
+  flex-flow: column wrap;
+  width: 80%;
+  margin: 10px auto;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0px 1px 10px 0px rgb(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+footer a {
+  text-decoration: none;
+  color: white;
+  padding: 10px;
+}
+
+footer a:hover {
+  color: #1bac91;
+}

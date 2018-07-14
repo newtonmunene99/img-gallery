@@ -1,6 +1,6 @@
 {
   "name": "img-gallery",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Image Gallery Web Component",
   "homepage": "https://newtonmunene99.github.io/img-gallery/",
   "module": "dist/esm/index.js",

@@ -2,6 +2,8 @@
 
 # Image-Gallery
 
+> npm install img-gallery
+
 This is a web component to help users integrate a masonry style image gallery in their websites and PWAs.
 <img src="./docs/assets/images/preview1.png" height="300">
 <img src="./docs/assets/images/preview2.png" height="300">

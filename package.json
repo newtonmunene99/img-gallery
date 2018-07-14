@@ -1,5 +1,5 @@
 {
-  "name": "img-gallery",
+  "name": "@themindleproject/img-gallery",
   "version": "0.0.2",
   "description": "Image Gallery Web Component",
   "homepage": "https://newtonmunene99.github.io/img-gallery/",
@@ -26,10 +26,7 @@
     "@types/jest": "^21.1.1",
     "jest": "^21.2.1"
   },
-  "author": {
-    "name": "Newton Munene",
-    "email": "newtonmunene99@gmail.com"
-  },
+  "author": "Newton Munene <newtonmunene99@gmail.com>",
   "license": "MIT",
   "keywords": [
     "Web Components",
@@ -56,5 +53,8 @@
       "json",
       "jsx"
     ]
+  },
+  "directories": {
+    "doc": "docs"
   }
 }

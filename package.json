@@ -2,7 +2,7 @@
   "name": "img-gallery",
   "version": "0.0.1",
   "description": "Image Gallery Web Component",
-  "homepage": "https://github.com/newtonmunene99/img-gallery/",
+  "homepage": "https://newtonmunene99.github.io/img-gallery/",
   "module": "dist/esm/index.js",
   "main": "dist/index.js",
   "types": "dist/types/components.d.ts",

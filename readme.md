@@ -13,7 +13,7 @@ This is a web component to help users integrate a masonry style image gallery in
 
 ### Script tag
 
-- Put this script tag `<script src='https://unpkg.com/@themindleproject/img-gallery@0.0.3/dist/img-gallery.js'></script>` in the head of your index.html
+- Put this script tag `<script src='https://unpkg.com/@themindleproject/img-gallery@latest/dist/img-gallery.js'></script>` in the head of your index.html
 - Then you can use the element anywhere in your template, JSX, html etc
 
 ### Node Modules

@@ -2,7 +2,7 @@
 
 # Image-Gallery
 
-> npm install img-gallery
+> npm i @themindleproject/img-gallery
 
 This is a web component to help users integrate a masonry style image gallery in their websites and PWAs.
 <img src="./docs/assets/images/preview1.png" height="300">
@@ -13,19 +13,19 @@ This is a web component to help users integrate a masonry style image gallery in
 
 ### Script tag
 
-- Put this script tag `<script src='https://unpkg.com/img-gallery@0.0.1/dist/img-gallery.js'></script>` in the head of your index.html
+- Put this script tag `<script src='https://unpkg.com/@themindleproject/img-gallery@0.0.3/dist/img-gallery.js'></script>` in the head of your index.html
 - Then you can use the element anywhere in your template, JSX, html etc
 
 ### Node Modules
 
-- Run `npm install img-gallery --save`
-- Put a script tag similar to this `<script src='node_modules/img-gallery/dist/img-gallery.js'></script>` in the head of your index.html
+- Run `npm i @themindleproject/img-gallery --save`
+- Put a script tag similar to this `<script src='node_modules/@themindleproject/img-gallery/dist/img-gallery.js'></script>` in the head of your index.html
 - Then you can use the element anywhere in your template, JSX, html etc
 
 ### In a stencil-starter app
 
-- Run `npm install img-gallery --save`
-- Add an import to the npm packages `import img-gallery;`
+- Run `npm i @themindleproject/img-gallery --save`
+- Add an import to the npm packages `import @themindleproject/img-gallery;`
 - Then you can use the element anywhere in your template, JSX, html etc
 
 #### Usage Example

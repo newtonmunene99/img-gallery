@@ -4,7 +4,7 @@
 
 > npm i @themindleproject/img-gallery
 
-**You can now use img-gallery-image with img-loader to add lazy loading.**
+**You can now use img-gallery-image with img-gallery to add lazy loading.**
 
 This is a web component to help users integrate a masonry style image gallery in their websites and PWAs.
 <img src="./docs/assets/images/preview1.png" height="300">

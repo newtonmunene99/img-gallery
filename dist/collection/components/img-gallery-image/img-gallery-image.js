@@ -41,7 +41,7 @@ export class ImgGalleryImage {
         }
     }
     render() {
-        return h("img", { "data-src": this.src, alt: this.alt });
+        return h("img", { id: "img_gallery_image", "data-src": this.src, alt: this.alt });
     }
     static get is() { return "img-gallery-image"; }
     static get encapsulation() { return "shadow"; }

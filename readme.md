@@ -4,6 +4,8 @@
 
 > npm i @themindleproject/img-gallery
 
+**You can now use img-gallery-image with img-loader to add lazy loading.**
+
 This is a web component to help users integrate a masonry style image gallery in their websites and PWAs.
 <img src="./docs/assets/images/preview1.png" height="300">
 <img src="./docs/assets/images/preview2.png" height="300">
@@ -97,6 +99,33 @@ Image Gallery Component only takes two optional properties.
 </img-gallery>
 ```
 
+### img-gallery-image
+
+- We have introduced a new component `img-gallery-image`.
+- Use it together with `img-gallery` to add lazy-loading.
+- You can also use it as standalone.
+
+#### Usage example
+
+1.  With `img-gallery`
+
+```html
+<img-gallery>
+    <img-gallery-image src="example1.jpg" alt="Image"></img-gallery-image>
+    <img-gallery-image src="example2.jpg" alt="Image"></img-gallery-image>
+    <img-gallery-image src="example3.jpg" alt="Image"></img-gallery-image>
+    <img-gallery-image src="example4.jpg" alt="Image"></img-gallery-image>
+</img-gallery>
+```
+
+2.  Standalone
+
+```html
+<img-gallery-image src="example1.jpg" alt="Image"></img-gallery-image>
+```
+
+> We will support lazy loading by default in our next version.
+
 #### Extras
 
 - Click or Tap on an image to View
@@ -106,6 +135,6 @@ Image Gallery Component only takes two optional properties.
 
 - [ ] slideshow
 - [ ] zoom images
-- [ ] lazy-loading images
+- [x] lazy-loading images
 
 I won't be doing images with captions. But if I change my mind I will do it in a different component.

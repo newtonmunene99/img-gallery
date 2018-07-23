@@ -30,6 +30,41 @@ declare global {
 declare global {
 
   namespace StencilComponents {
+    interface ImgGalleryImage {
+      'alt': string;
+      'src': string;
+    }
+  }
+
+  interface HTMLImgGalleryImageElement extends StencilComponents.ImgGalleryImage, HTMLStencilElement {}
+
+  var HTMLImgGalleryImageElement: {
+    prototype: HTMLImgGalleryImageElement;
+    new (): HTMLImgGalleryImageElement;
+  };
+  interface HTMLElementTagNameMap {
+    'img-gallery-image': HTMLImgGalleryImageElement;
+  }
+  interface ElementTagNameMap {
+    'img-gallery-image': HTMLImgGalleryImageElement;
+  }
+  namespace JSX {
+    interface IntrinsicElements {
+      'img-gallery-image': JSXElements.ImgGalleryImageAttributes;
+    }
+  }
+  namespace JSXElements {
+    export interface ImgGalleryImageAttributes extends HTMLAttributes {
+      'alt'?: string;
+      'src'?: string;
+    }
+  }
+}
+
+
+declare global {
+
+  namespace StencilComponents {
     interface ImgGallery {
       'color': string;
       'src': Array<any>;

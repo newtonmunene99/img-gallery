@@ -35,6 +35,40 @@
         }
       ],
       "shadow": true
+    },
+    {
+      "tag": "img-gallery-image",
+      "dependencies": [],
+      "componentClass": "ImgGalleryImage",
+      "componentPath": "components/img-gallery-image/img-gallery-image.js",
+      "styles": {
+        "$": {
+          "stylePaths": [
+            "components/img-gallery-image/img-gallery-image.css"
+          ]
+        }
+      },
+      "props": [
+        {
+          "name": "alt",
+          "type": "String",
+          "attr": "alt"
+        },
+        {
+          "name": "src",
+          "type": "String",
+          "attr": "src"
+        }
+      ],
+      "states": [
+        {
+          "name": "oldSrc"
+        }
+      ],
+      "hostElement": {
+        "name": "el"
+      },
+      "shadow": true
     }
   ],
   "collections": [],

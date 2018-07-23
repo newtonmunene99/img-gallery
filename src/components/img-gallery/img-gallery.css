@@ -23,6 +23,13 @@
   border-radius: 10px;
 }
 
+#photos > img:hover {
+  transform: scale(1.2);
+  z-index: 2;
+  box-shadow: 1px 1px 10px 0px rgba(0, 0, 0, 0.3);
+  /* box-shadow: rgba(0,0,0,.4) 2px 2px 35px; */
+}
+
 #galleryPreview {
   position: fixed;
   display: flex;

@@ -59,6 +59,6 @@ export class ImgGalleryImage {
     }
   }
   render() {
-    return <img id="img_gallery_image" data-src={this.src} alt={this.alt} />;
+    return <img class="img_gallery_image" data-src={this.src} alt={this.alt} />;
   }
 }

@@ -1,6 +1,6 @@
 {
   "name": "@themindleproject/img-gallery",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "Image Gallery Web Component",
   "homepage": "https://newtonmunene99.github.io/img-gallery/",
   "module": "dist/esm/index.js",

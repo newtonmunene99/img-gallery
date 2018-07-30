@@ -11,6 +11,7 @@ import '../../stencil.core';
 import '../../stencil.core';
 import '../../stencil.core';
 import '../../stencil.core';
+import '../../stencil.core';
 export declare class ImageGallery {
     color: string;
     src: Array<any>;

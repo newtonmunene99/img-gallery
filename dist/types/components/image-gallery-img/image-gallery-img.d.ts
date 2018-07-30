@@ -11,6 +11,7 @@ import '../../stencil.core';
 import '../../stencil.core';
 import '../../stencil.core';
 import '../../stencil.core';
+import '../../stencil.core';
 export declare class ImageGalleryImg {
     comment: string;
     link: string;

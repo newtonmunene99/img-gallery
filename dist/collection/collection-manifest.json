@@ -74,7 +74,7 @@
   "collections": [],
   "compiler": {
     "name": "@stencil/core",
-    "version": "0.10.10",
+    "version": "0.11.0",
     "typescriptVersion": "2.9.2"
   },
   "bundles": []

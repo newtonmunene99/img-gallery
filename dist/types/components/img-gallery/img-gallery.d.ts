@@ -1,4 +1,5 @@
 import '../../stencil.core';
+import '../img-gallery-image/img-gallery-image';
 export declare class ImgGallery {
     color: string;
     src: Array<any>;

@@ -1,3 +1,4 @@
+import '../img-gallery-image/img-gallery-image';
 export class ImgGallery {
     constructor() {
         this.color = 'inherit';
@@ -51,10 +52,10 @@ export class ImgGallery {
     render() {
         return [
             h("div", null, !this.src && !this.images ? (h("div", null)) : (h("div", { id: "photos", style: { 'background-color': this.color, overflow: 'auto' } }, this.src
-                ? this.images.map((image, index) => (h("img", { src: image, alt: "Image", onClick: event => {
+                ? this.images.map((image, index) => (h("img-gallery-image", { src: image, alt: "Image", onClick: event => {
                         this.handleImageOpen(event, index);
                     } })))
-                : this.images.map((image, index) => (h("img", { src: image.src, alt: "Image", onClick: event => {
+                : this.images.map((image, index) => (h("img-gallery-image", { src: image.src, alt: "Image", onClick: event => {
                         this.handleImageOpen(event, index);
                     } })))))),
             h("div", null, this.preview ? (h("div", { id: "galleryPreview" },
@@ -68,13 +69,13 @@ export class ImgGallery {
                     h("div", { class: "next", onClick: () => {
                             this.next();
                         } }),
-                    h("img", { src: this.CurrentImageUrl, alt: "Image" })),
+                    h("img-gallery-image", { src: this.CurrentImageUrl, alt: "Image" })),
                 h("div", { class: "footer" }, this.src
-                    ? this.images.map((image, index) => (h("img", { src: image, alt: "Image", onClick: event => {
-                            this.handlePreviewImage(event, index);
+                    ? this.images.map((image, index) => (h("img-gallery-image", { src: image, alt: "Image", onClick: event => {
+                            this.handleImageOpen(event, index);
                         } })))
-                    : this.images.map((image, index) => (h("img", { src: image.src, alt: "Image", onClick: event => {
-                            this.handlePreviewImage(event, index);
+                    : this.images.map((image, index) => (h("img-gallery-image", { src: image.src, alt: "Image", onClick: event => {
+                            this.handleImageOpen(event, index);
                         } })))))) : null)
         ];
     }

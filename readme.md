@@ -2,9 +2,9 @@
 
 # Image-Gallery
 
-> npm i @themindleproject/img-gallery
+**img-gallery-image is now used by default. This means Lazy Loading is enabled by default. You can also use it as a standalone component to replace the normal img tag. See usage section near the bottom.**
 
-**You can now use img-gallery-image with img-gallery to add lazy loading. Will be added by default soon.**
+> npm i @themindleproject/img-gallery
 
 This is a web component to help users integrate a masonry style image gallery in their websites and PWAs.
 <img src="./docs/assets/images/preview1.png" height="300">
@@ -49,6 +49,7 @@ This is a web component to help users integrate a masonry style image gallery in
 ```
 
 2.  Feed an array of image source urls to the src property
+    **We're having a few bugs with this method. It will be fixed very soon.**
 
 - Please note that this is for use within frameworks such as Angular, Ionic Framework, Stencil, React etc.
 
@@ -60,8 +61,8 @@ URLArray: Array<string> = ['example1.jpg','example2.jpg','example2.jpg','example
 
 Then In your html file.
 
-```html
-<img-gallery src={URLArray}></img-gallery>
+```jsx
+<img-gallery src={URLArray} />
 ```
 
 Or In your tsx file
@@ -102,29 +103,36 @@ Image Gallery Component only takes two optional properties.
 ### img-gallery-image
 
 - We have introduced a new component `img-gallery-image`.
-- Use it together with `img-gallery` to add lazy-loading.
+- It's automatically used together with `img-gallery` to add lazy-loading.
 - You can also use it as standalone.
 
 #### Usage example
 
-1.  With `img-gallery`
-
-```html
-<img-gallery>
-    <img-gallery-image src="example1.jpg" alt="Image"></img-gallery-image>
-    <img-gallery-image src="example2.jpg" alt="Image"></img-gallery-image>
-    <img-gallery-image src="example3.jpg" alt="Image"></img-gallery-image>
-    <img-gallery-image src="example4.jpg" alt="Image"></img-gallery-image>
-</img-gallery>
-```
-
-2.  Standalone
+1.  Standalone
 
 ```html
 <img-gallery-image src="example1.jpg" alt="Image"></img-gallery-image>
 ```
 
-> We will support lazy loading by default in our next version.
+##### Styling
+
+I know that it can be a pain when I force you to use styles you don't want.
+I've added css4 variables to help you style different aspects.
+
+1.  `--img-gallery-image-width` for the width
+2.  `--img-gallery-image-height` for the height
+3.  `--img-gallery-image-max-width` for max-width
+4.  `--img-gallery-image-max-height` for max-height
+5.  `--img-gallery-image-border-radius` for border-radius.
+
+_Example_
+
+```css
+img-gallery-image {
+  --img-gallery-image-border-radius: 10px;
+  --img-gallery-image-height: 100%;
+}
+```
 
 #### Extras
 

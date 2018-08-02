@@ -1,5 +1,5 @@
 import { Component, Prop, State } from '@stencil/core';
-
+import '../img-gallery-image/img-gallery-image';
 @Component({
   tag: 'img-gallery',
   styleUrl: 'img-gallery.css',
@@ -75,7 +75,7 @@ export class ImgGallery {
           >
             {this.src
               ? this.images.map((image, index) => (
-                  <img
+                  <img-gallery-image
                     src={image}
                     alt="Image"
                     onClick={event => {
@@ -84,7 +84,7 @@ export class ImgGallery {
                   />
                 ))
               : this.images.map((image, index) => (
-                  <img
+                  <img-gallery-image
                     src={image.src}
                     alt="Image"
                     onClick={event => {
@@ -119,25 +119,26 @@ export class ImgGallery {
                   this.next();
                 }}
               />
-              <img src={this.CurrentImageUrl} alt="Image" />
+
+              <img-gallery-image src={this.CurrentImageUrl} alt="Image" />
             </div>
             <div class="footer">
               {this.src
                 ? this.images.map((image, index) => (
-                    <img
+                    <img-gallery-image
                       src={image}
                       alt="Image"
                       onClick={event => {
-                        this.handlePreviewImage(event, index);
+                        this.handleImageOpen(event, index);
                       }}
                     />
                   ))
                 : this.images.map((image, index) => (
-                    <img
+                    <img-gallery-image
                       src={image.src}
                       alt="Image"
                       onClick={event => {
-                        this.handlePreviewImage(event, index);
+                        this.handleImageOpen(event, index);
                       }}
                     />
                   ))}

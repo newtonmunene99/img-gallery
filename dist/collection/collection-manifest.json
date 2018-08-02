@@ -2,7 +2,9 @@
   "components": [
     {
       "tag": "img-gallery",
-      "dependencies": [],
+      "dependencies": [
+        "img-gallery-image"
+      ],
       "componentClass": "ImgGallery",
       "componentPath": "components/img-gallery/img-gallery.js",
       "styles": {

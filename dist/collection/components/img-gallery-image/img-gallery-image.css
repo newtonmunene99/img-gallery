@@ -2,6 +2,9 @@
   display: inline-block;
 }
 img {
-  max-width: 100%;
-  max-height: 100%;
+  max-width: var(--img-gallery-image-max-width, 100%);
+  max-height: var(--img-gallery-image-max-height, 100%);
+  width: var(--img-gallery-image-width);
+  height: var(--img-gallery-image-height);
+  border-radius: var(--img-gallery-image-border-radius, 0px);
 }
